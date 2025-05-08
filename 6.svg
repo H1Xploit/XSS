@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <animate attributeName="href" 
+           values="javascript:alert(1)" 
+           begin="0s" 
+           dur="indefinite" 
+           repeatCount="indefinite" />
+</svg>
