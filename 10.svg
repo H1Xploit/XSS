@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <a href="javascript:alert(1)">
-    <text x="20" y="20">Klik saya</text>
+    <text x="20" y="20">Click Me</text>
   </a>
 </svg>
