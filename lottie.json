@@ -1,3 +1,5 @@
+itu yang base64
+
 {
   "v": "5.5.2",
   "fr": 60,
@@ -32,7 +34,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "alert('env:'+typeof document+' '+typeof JSON+' '+typeof Image); var $bm_rt = [100,100]; $bm_rt;"
+          "x": "alert('Yoo Dawg'); var $bm_rt = [100,100]; $bm_rt"
         }
       },
       "ip": 0,
