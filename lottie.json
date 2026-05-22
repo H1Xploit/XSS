@@ -32,7 +32,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "alert('hello there, im your buddy'); var $bm_rt = [100,100]; $bm_rt;"
+          "x": "alert('hello there'); var $bm_rt = [100,100]; $bm_rt;"
         }
       },
       "ip": 0,
