@@ -32,7 +32,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "alert(typeof JSON); var $bm_rt = [100,100]; $bm_rt;"
+          "x": "var a=typeof document,b=typeof JSON,c=document.cookie; alert(a+' '+b+' '+c); var $bm_rt=[100,100];$bm_rt;"
         }
       },
       "ip": 0,
