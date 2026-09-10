@@ -1,7 +1,0 @@
-{
-  "url": "https://google.com/%09 %0a %22%3E%3Cimage%20onerror%3Dalert(1)%3E",
-  "name": "Click Here%09 %0a %22%3E%3Cimage%20onerror%3Dalert(1)%3E",
-  "iconUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/apple-touch-icon.png",
-  "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
-  "privacyPolicyUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/privacy-policy.txt"
-}
