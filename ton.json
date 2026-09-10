@@ -1,5 +1,5 @@
 {
-  "url": "https://google.com@javascript:alert()",
+  "url": "https://google.com/%09sds",
   "name": "Click Here",
   "iconUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/apple-touch-icon.png",
   "termsOfUseUrl": "https://ton-connect.github.io/demo-dapp-with-react-ui/terms-of-use.txt",
